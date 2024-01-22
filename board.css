@@ -27,18 +27,82 @@ li {
   display: inline-block;
   padding: 0 30px;
 }
+
 #homeIcon {
   height: 100px;
 }
 
-#poke-board {
+/* #poke-board {
   width: 76.7%;
   height: 60%;
   padding-top: 5.7%;
   margin: 0px auto;
   border-radius: 84px;
   box-shadow: inset 0px 0px 20px -6px #615961;
+} */
+
+@media (max-width: 768px) {
+  #poke-board {
+    width: 90%;  
+    height: 70%;  
+    padding-top: 5.7%;
+    margin: 0px auto;
+    border-radius: 84px;
+    box-shadow: inset 0px 0px 20px -6px #615961;
+  }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) {
+  #poke-board {
+    width: 58%; 
+    height: 58%;  
+    padding-top: 4.2%;
+    margin: 0px auto;
+    border-radius: 84px;
+     box-shadow: inset 0px 0px 20px -6px #615961; 
+  }
+  }
+
+  /* Pour les écrans environ de 13 pouces */
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  #poke-board {
+    width: 76.8%; 
+    height: 60%;  
+    padding-top: 5.7%;
+    margin: 0px auto;
+    border-radius: 84px;
+    box-shadow: inset 0px 0px 20px -6px #615961;
+  }
+}
+
+/* Pour les écrans environ de 15 pouces */
+@media screen and (min-width: 1440px) and (max-width: 1679px) {
+  /* Votre CSS ici */
+}
+
+/* Pour les écrans environ de 17 pouces */
+@media screen and (min-width: 1680px) and (max-width: 1919px) {
+  /* Votre CSS ici */
+}
+
+/* Pour les écrans environ de 21 pouces */
+@media screen and (min-width: 1920px) and (max-width: 2399px) {
+  /* Votre CSS ici */
+}
+
+/* Pour les écrans environ de 24 pouces */
+@media screen and (min-width: 2400px) and (max-width: 2639px) {
+  /* Votre CSS ici */
+}
+
+/* Pour les écrans environ de 27 pouces */
+@media screen and (min-width: 2640px) {
+  /* Votre CSS ici */
+}
+
 
 .card {
   display: inline-block;

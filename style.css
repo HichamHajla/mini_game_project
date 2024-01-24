@@ -43,9 +43,8 @@ audio::-webkit-media-controls-play-button {
   position: fixed;
   top: 1%;
   color: #ffcb00;
-  font-size: 70px;
-  position: center;
-  text-shadow: 2px 2px 4px black;
+  font-size: 100px;
+  text-shadow: 5px 5px 2px #585858;
 }
 
 /* Instructions */
@@ -60,10 +59,10 @@ audio::-webkit-media-controls-play-button {
   top: 25%;
   left: 10%;
   width: 40%;
-  border-radius: 15%;
+  border-radius: 30px;
   color: #ffcb00;
   background: rgb(6, 0, 36, 50%);
-  box-shadow: 2px 2px 2px black;
+  /* box-shadow: 2px 2px 2px black; */
   visibility: hidden;
 }
 
@@ -72,10 +71,10 @@ audio::-webkit-media-controls-play-button {
   top: 25%;
   left: 10%;
   width: 40%;
-  border-radius: 15%;
+  border-radius: 30px;
   color: #ffcb00;
   background: rgb(6, 0, 36, 50%);
-  box-shadow: 2px 2px 2px black;
+  /* box-shadow: 2px 2px 2px black; */
   visibility: hidden;
 }
 
@@ -123,6 +122,9 @@ text-shadow: 2px 2px 4px black;
   transform: scale(1.5) ;
 }
 
+#levels:hover{
+  cursor: pointer;
+}
 
 h1 {
   text-align: center;
@@ -169,7 +171,7 @@ p {
   color: #ffcb00;
   background: #00809f;
   transition: 1s;
-  box-shadow: 6px 6px 0 black;
+  box-shadow: 5px 5px 0 #00809f;
   transform: skewX(-15deg);
 }
 
@@ -242,3 +244,4 @@ path.two {
     fill: white;
   }
 }
+

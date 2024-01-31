@@ -210,7 +210,7 @@ p {
   width: 40%;
   border-radius: 30px;
   color: #ffcb00;
-  background: rgb(6, 0, 36, 50%);
+  background: rgb(6, 0, 36, 90%);
   /* box-shadow: 2px 2px 2px black; */
 }
 
@@ -241,6 +241,9 @@ p {
 .button-instruction {
   width: 45px;
   height: 45px;
+  position: absolute;
+  top:1%;
+  left:1%;
 }
 
 .close-instructions {
@@ -250,7 +253,7 @@ p {
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .lvlNumber {
@@ -268,11 +271,15 @@ p {
   cursor:pointer; 
 }
 
-#exit{
+#exit {
   width: 60px;
   background-color:#ffcb00;
   border-radius: 100%;
   margin-top: 10px ;
+}
+
+#exit:hover{
+background-color: #416aa4;
 }
 
 footer{

@@ -8,9 +8,9 @@
     <title>Poké - Mem</title>
   </head>
   <body>
-    <video autoplay muted loop id="myVideo">
+    <!-- <video autoplay muted loop id="myVideo">
       <source src="medias/backG.mp4" type="video/mp4" />
-    </video>
+    </video> -->
     <audio autoplay loop id="landingSound">
       <source src="./medias/audio/pokemonMainMusic.mp3" type="audio/mpeg" />
     </audio> 
@@ -24,7 +24,11 @@
 
     <!--Div du popUp des instructions-->
     <div id="div_instructions">
-      <h1 id="titlePokeMem">POKÉ-MEM</h1>
+      <img id="memo" src="./img/612ce4761b9679000402af1c.png" alt="title"/>
+      <img id="memory" src="./img/MemoryCard.png" alt="title"/>
+      <img id="myName" src="./img/Sous-titre.png" alt="name"/>
+      
+      <!-- <h1 id="titlePokeMem">POKÉ-MEM</h1> -->
       <div id="navigation">
         <div class="navigation-two">
           <button id="close-instructions">
@@ -35,14 +39,15 @@
             />
           </button>
           
-          <h1>Instructions</h1>
+          <!-- <h1>Rules</h1> -->
           <p>
-            Welcome to the Pokemon Memory Game : The Poké-Mem ! The goal is to
-            find cards pair. You will only see 2 cards as the same time maximum.
-            Once you have found all pairs, you win.
-            
+            Embark on a thrilling journey with the Pokémon Memory Card Game! 
+            Unleash your memory skills to uncover matching pairs of Pokémon cards. 
+            But there's a twist! You can only reveal two cards at a time. 
+            Once you've successfully paired all the Pokémon, victory is yours! 
+            Are you ready to become the Poké-Mem Master?<br/> Let the adventure begin!
           </p>
-          <button id="button_rules"><h2 id="levels">Level's Rules</h2> </button> 
+          <button id="button_rules"><h2>> Level's Rules <</h2> </button> 
         </div>
       </div>
     </div>
@@ -59,7 +64,7 @@
             />
           </button>
           
-          <h1>Rules</h1>
+          <!-- <h1>Rules</h1> -->
           <p>
             Level 1 : No limit of time 
             <br>
@@ -74,8 +79,9 @@
  
     <!--Div du bouton start-->
     <div class="wrapper start">
-      <a class="cta" href="./arena.html">
-        <span>START</span>
+      <!-- <button class="start3"> -->
+      <a class="start3" href="./arena.html">START
+        <!-- <span>START</span>
         <span>
           <svg
             width="66px"
@@ -109,16 +115,20 @@
               ></path>
             </g>
           </svg>
-        </span>
+        </span> -->
       </a>
+    <!-- </button> -->
     </div>
 
     <!--Div bouton instruction-->
     <br />
     <div class="wrapper instruction">
-      <a class="cta" href="#">
-        <span id="button-instructions">INSTRUCTIONS</span>
-        <span>
+      <!-- <a class="cta" href="#"> -->
+        <a class="start3"  id="button-instructions" href="#">
+          RULES
+        </a>
+        <!-- <span></span> -->
+        <!-- <span>
           <svg
             width="66px"
             height="43px"
@@ -151,8 +161,8 @@
               ></path>
             </g>
           </svg>
-        </span>
-      </a>
+        </span> -->
+      <!-- </a> -->
     </div>
     <script src="./landing.js"></script>
   </body>

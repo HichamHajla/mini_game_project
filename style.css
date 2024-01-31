@@ -3,6 +3,8 @@
 body {
   font-family: "Pokemon Solid", sans-serif;
   text-shadow: 2px 2px 4px black;
+  background: url("./img/pokemon-unite_3840x2160_xtrafondos.com.jpg") no-repeat;
+  background-size: 100%;
 }
 
 /* Style the button used to pause/play the video */
@@ -39,13 +41,13 @@ audio::-webkit-media-controls-play-button {
 }
 
 /* Pokememe Title*/
-#titlePokeMem {
+/* #titlePokeMem {
   position: fixed;
   top: 1%;
   color: #ffcb00;
   font-size: 100px;
   text-shadow: 5px 5px 2px #585858;
-}
+} */
 
 /* Instructions */
 #div_instructions {
@@ -55,27 +57,27 @@ audio::-webkit-media-controls-play-button {
 }
 
 #navigation {
-  position: fixed;
+  position: absolute;
   top: 25%;
   left: 10%;
-  width: 40%;
+  width: 35%;
   border-radius: 30px;
-  color: #ffcb00;
-  background: rgb(6, 0, 36, 50%);
-  /* box-shadow: 2px 2px 2px black; */
+  color: white;
+  background: rgb(6, 0, 36, 90%);
   visibility: hidden;
+  z-index: 999;
 }
 
 #rules{
-  position: fixed;
+  position: absolute;
   top: 25%;
   left: 10%;
-  width: 40%;
+  width: 35%;
   border-radius: 30px;
-  color: #ffcb00;
-  background: rgb(6, 0, 36, 50%);
-  /* box-shadow: 2px 2px 2px black; */
+  color: white;
+  background: rgb(6, 0, 36, 90%);
   visibility: hidden;
+  z-index: 999;
 }
 
 .navigation-two {
@@ -87,6 +89,9 @@ audio::-webkit-media-controls-play-button {
 .button-instruction {
   width: 45px;
   height: 45px;
+  position: absolute;
+  top: 1%;
+  left: 1%;
 }
 
 #close-instructions {
@@ -96,7 +101,7 @@ audio::-webkit-media-controls-play-button {
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #close-instructions-rules{
@@ -110,16 +115,18 @@ audio::-webkit-media-controls-play-button {
 }
 
 #button_rules{
-  padding: 0;
+font-size: larger;
+padding: 0;
 border: none;
 background: none;
 font-family: "Pokemon Solid", sans-serif;
-color:#ffcb00;
+color:white;
 text-shadow: 2px 2px 4px black;
 }
 
 #button_rules:hover{
   transform: scale(1.5) ;
+  cursor: pointer;
 }
 
 #levels:hover{
@@ -141,7 +148,7 @@ p {
   list-style-type: none;
   line-height: 50px;
   letter-spacing: 1.5px;
-  padding: 5%;
+  padding: 1%;
 }
 
 /* boutons start & instruction animation*/
@@ -151,15 +158,14 @@ p {
 }
 
 .start {
-  position: fixed;
-  right: 5%;
-  top: 30%;
+  position: relative;
+  margin-top: 9%;
+  /* right: 46.8%;
+  top: 28.5%; */
 }
 
 .instruction {
-  position: fixed;
-  right: 5%;
-  top: 60%;
+  margin-top: 2%;
 }
 
 .cta {
@@ -245,3 +251,85 @@ path.two {
   }
 }
 
+#memo{
+  width: 400px;
+  position: absolute;
+  bottom: 78%;
+}
+
+#memory{
+  width: 200px;
+  position: absolute;
+  bottom: 76%;
+}
+
+.start3 {
+  /* margin-left: 46%;
+  margin-top: 3%; */
+  --glow-color: white;
+  --glow-spread-color: white;
+  --enhanced-glow-color: white;
+  --btn-color: black ;
+  border: .25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 1em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+  font-family: "Pokemon Solid", sans-serif;
+
+}
+.start3::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: 0.7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.start3:hover {
+  color: black;
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+cursor:pointer;
+}
+
+.start3:active {
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color : black;
+}
+
+#myName{
+  width: 150px;
+  position: absolute;
+  left: 58%;
+  top: 16%;
+}
+
+/* color: #ffcb00; */

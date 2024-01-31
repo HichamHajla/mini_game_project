@@ -4,7 +4,7 @@ body {
   font-family: "Pokemon Solid", sans-serif;
   text-shadow: 2px 2px 4px black;
   background: url("./img/pokemon-unite_3840x2160_xtrafondos.com.jpg") no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 /* Style the button used to pause/play the video */
@@ -252,7 +252,7 @@ path.two {
 }
 
 #memo{
-  width: 400px;
+  width: 300px;
   position: absolute;
   bottom: 78%;
 }

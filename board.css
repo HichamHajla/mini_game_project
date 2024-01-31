@@ -86,7 +86,7 @@ li {
 /* Pour les écrans environ de 15 pouces */
 @media screen and (min-width: 1440px) and (max-width: 1679px) {
   #poke-board {
-    width: 76%; 
+    width: 77%; 
     height: 58%;  
     padding-top: 7%;
     padding-left: 0.5%;
